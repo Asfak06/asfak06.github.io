@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+<div class="bg">
+	<div class="imeg">
+	   <div class="cir1">
+		<a href="blog/1.html">blog</a>
+		<a href="mix/index.html">gallery</a>
+		<a href="#">click</a>
+		<a href="contact/index.html">contact</a>
+		<a href="#">click</a>
+		<h1>Asfak Ahmed Munna</h1>
+	   </div>		    
+    </div>
+</div>
+
+
+
+
+
+<script src="js/jquery-3.2.1.min.js" ></script>
+<script>
+   
+  $('a:nth-child(2)').hide();
+   $('a:nth-child(4)').hide();
+   $('a:nth-child(5)').hide();
+   $('a:nth-child(1)').hide();
+  
+
+
+$('a:nth-child(3)').click(function (argument) {
+			$('a:nth-child(1)').show();
+			$('a:nth-child(3)').hide();
+			$('a:nth-child(2)').show();
+            $('a:nth-child(4)').show();
+            $('a:nth-child(5)').show();
+            $('h1').hide();
+
+   
+		});
+
+$('a:nth-child(5)').click(function (argument) {
+			
+			
+   $('a:nth-child(1)').hide();
+   $('a:nth-child(2)').hide();
+   $('a:nth-child(4)').hide();
+   $('a:nth-child(5)').hide();
+   $('a:nth-child(3)').show();
+   $('h1').show();
+		});
+
+
+</script>
+
+</body>
+</html>
