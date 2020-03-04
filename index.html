@@ -20,13 +20,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#home-section">Home</a>
+            <a class="nav-link" href="#bgCanvas">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#explore-head-section">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#create-head-section">Create</a>
+            <a class="nav-link" href="#share-head-section">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#share-head-section">Share</a>
@@ -37,20 +37,17 @@
   </nav>
 
   <!-- HEAD SECTION -->
-  <section id="home-section">
-    <div class="dark-overlay">
-      <div class="home-inner">
-        <div class="container">
-                <div class="box ">
-                  <img class="h-25 w-25 mx-auto d-block" src="img1.jpg">
-                </div> 
-                <div class="p-4 align-self-end text-center">
-                  <h1 class=" "><strong>Asfak Ahmed</strong><br>Dhaka,Bangladesh</h1>
-                </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="container-fluid p-0">
+   <canvas id="bgCanvas"></canvas>
+         <div class="intro">        
+                  <div class="box ">
+                    <img class="h-25 w-25 mx-auto d-block" src="img1.jpg">
+                  </div> 
+                  <div class="p-4 align-self-end text-center">
+                    <h1 class=" "><strong>Asfak Ahmed</strong><br>Dhaka,Bangladesh</h1>
+                  </div>
+          </div>
+</div>
 
   <!-- EXPLORE HEAD SECTION -->
   <section id="explore-head-section" class="text-center py-5">
@@ -124,82 +121,104 @@
   </section>
 
   <!-- EXPLORE MAIN SECTION -->
-  <section id="explore-main-section" class="bg-light py-5 text-dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 my-2">
-          <img src="img/explore.jpeg" class="img-fluid rounded" alt="Explore">
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <h3>Explore Learn & Connect</h3>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aliquam sed cum, sunt, quia dicta? Animi, commodi, neque incidunt non atque aliquid voluptates nostrum, inventore tenetur asperiores a necessitatibus ut.</p>
-          <div class="d-flex flex-row">
-            <div class="p-4 align-self-start mt-2">
-              <i class="fa fa-check"></i>
-            </div>
-            <div>
-              <p class="lead p-4 align-self-end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas officiis iste itaque? </p>
-            </div>
-          </div>
-          <div class="d-flex flex-row">
-            <div class="p-4 align-self-start mt-2">
-              <i class="fa fa-check"></i>
-            </div>
-            <div>
-              <p class="lead p-4 align-self-end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas officiis iste itaque? </p>
-            </div>
+  
+
+  <!-- CREATE HEAD SECTION -->
+  <section id="home-getstarted" class="text-center text-light">
+    <div class="dark-overlay">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col">
+            <h2>Interests and hobbies</h2>
+            <p class="lead mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quaerat voluptatem laboriosam vero recusandae repellendus? Impedit iure est sit voluptatum blanditiis cum sequi laudantium quod dicta, a quaerat vel, obcaecati!</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CREATE HEAD SECTION -->
-  <section id="create-head-section" class="py-5 bg-primary text-center">
-    <div class="container">
-      <h2 class="display-4">Create</h2>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla ducimus veniam repellat nostrum, placeat aperiam maiores! Dicta, voluptatum molestiae.</p>
-      <a href="#" class="btn btn-outline-light">Find Out More</a>
-    </div>
-  </section>
-
   <!-- CREATE MAIN SECTION -->
-  <section id="create-main-section" class="py-5">
+  <section id="create-main-section" class="py-5 text-center">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <h3>Create Your Passion</h3>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aliquam sed cum, sunt, quia dicta? Animi, commodi, neque incidunt non atque aliquid voluptates nostrum, inventore tenetur asperiores a necessitatibus ut.</p>
-          <div class="d-flex flex-row">
-            <div class="align-self-start p-4 mt-2">
-              <i class="fa fa-check"></i>
-            </div>
-            <div class="align-self-end p-4 mt-2">
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas officiis iste itaque? </p>
-            </div>
-          </div>
-          <div class="d-flex flex-row">
-            <div class="align-self-start p-4 mt-2">
-              <i class="fa fa-check"></i>
-            </div>
-            <div class="align-self-end p-4 mt-2">
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas officiis iste itaque? </p>
-            </div>
-          </div>
+        <div class="col-md-4">
+          <i class="fa fa-code"></i>
+          <h3 class="my-2">Coding</h3>        
         </div>
-        <div class="col-lg-6 col-md-12">
-          <img src="img/create.jpeg" class="img-fluid rounded" alt="Create your passion">
+        <div class="col-md-4">
+          <i class="fa fa-laptop"></i>
+          <h3 class="my-2">Computers</h3>        
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-wrench"></i>
+          <h3 class="my-2">Build</h3>        
         </div>
       </div>
     </div>
   </section>
 
   <!-- SHARE HEAD SECTION -->
-  <section id="share-head-section" class="bg-primary py-5 text-center">
+  <section id="share-head-section" class="bg-dark py-5 text-center">
     <div class="container">
-      <h3 class="display-4">Share</h3>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla ducimus veniam repellat nostrum, placeat aperiam maiores! Dicta, voluptatum molestiae.</p>
-      <a href="#" class="btn btn-outline-light">Find Out More</a>
+       <h4 class="text-center font-weight-bold display-4 mb-5" style="font-family:'Helvetica Neue';">Skilled in following technologies</h4>
+      <div class="row">
+         <div class="col-md-4">
+          <div class="card bg-success">
+            <div class="card-body">
+              <i class="fab fa-php"></i>
+              <h3>PHP</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-primary">
+            <div class="card-body">
+              <i class="fa fa-car mb-3"></i>
+              <h3>Lorem Ipsum</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-danger">
+            <div class="card-body">
+              <i class="fa fa-play mb-3"></i>
+              <h3>Lorem Ipsum</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-md-4">
+          <div class="card bg-light text-dark">
+            <div class="card-body">
+              <i class="fa fa-tree mb-3"></i>
+              <h3>Lorem Ipsum</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark">
+            <div class="card-body">
+              <i class="fa fa-cart-plus mb-3"></i>
+              <h3>Lorem Ipsum</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-dark">
+          <div class="card bg-warning">
+            <div class="card-body">
+              <i class="fa fa-youtube mb-3"></i>
+              <h3>Lorem Ipsum</h3>
+              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -280,7 +299,8 @@
     </div>
   </div>
 
-
+  
+  <script src="js/animate.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
