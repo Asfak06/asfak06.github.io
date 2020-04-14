@@ -10,8 +10,14 @@
   <link rel="stylesheet" href="css/navbar-fixed.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Asfak</title>
+  <script src="js/jquery.min.js"></script>
 </head>
 <body>
+   
+  <div class="loader">
+    <div class="inner"></div>
+  </div>
+
   <nav class="navbar navbar-dark navbar-expand-md fixed-top">
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -20,13 +26,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#bgCanvas">Home</a>
+            <a class="nav-link" href="#bgCanvas">Home </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#explore-head-section">About</a>
+            <a class="nav-link" href="#explore-head-section">About </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#share-head-section">Skills</a>
+            <a class="nav-link" href="#share-head-section">Skills </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stats">Stats </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#share-main-section">Project </a>
@@ -34,6 +43,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#hom-getstarted">Links </a>
           </li>
+
         </ul>
       </div>
     </div>
@@ -138,6 +148,7 @@
         </div>
       </div>
     </div>
+  </div>
   </section>
 
   <!-- CREATE MAIN SECTION -->
@@ -317,6 +328,71 @@
     </div>
   </div>
 </section>
+
+
+<div  class="statsSection section mb-5 mt-3 ">
+  <div class="container" id="stats">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="squareItem">
+          <div class="squareInnerContainer">
+            <div class="squareIcon">
+              <i class="fa fa-clock"></i>
+            </div>
+            <div class="squareContent">
+              <h2 class="counter">1</h2>
+              <h3>Year Experience</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="squareItem">
+          <div class="squareInnerContainer">
+            <div class="squareIcon">
+              <i class="fa fa-calendar"></i>
+            </div>
+            <div class="squareContent">
+              <h2 class="counter">3</h2>
+              <h3>Clients</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="squareItem">
+          <div class="squareInnerContainer">
+            <div class="squareIcon">
+              <i class="fa fa-bolt"></i>
+            </div>
+            <div class="squareContent">
+              <h2 class="counter">3</h2>
+              <h3>Web Apps</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="squareItem">
+          <div class="squareInnerContainer">
+            <div class="squareIcon">
+              <i class="fa fa-cloud"></i>
+            </div>
+            <div class="squareContent">
+              <h2 class="counter">6</h2>
+              <h3>Websites Made</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
   <!-- SHARE MAIN SECTION -->
   <section id="share-main-section" class="bg-dark py-5 text-alert">
     <div class="container">
@@ -348,6 +424,14 @@
               <p class="lead font-weight-bold"><a href="#">Portfolio website. <span class="text-warning">BOOTSTRAP 4,JAVASCRIPT</span> </a> </p>
             </div>
           </div>
+           <div class="d-flex flex-row">
+            <div class="p-4 align-self-start mt-2">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="p-4 align-self-end">
+              <p class="lead font-weight-bold"><a href="#">About page. <span class="text-warning">BOOTSTRAP 4,JAVASCRIPT</span> </a> </p>
+            </div>
+          </div>
         </div>
         <div class="col-lg-6 col-md-12">
           <div class="d-flex flex-row">
@@ -363,7 +447,7 @@
               <i class="fa fa-check"></i>
             </div>
             <div class="p-4 align-self-end">
-              <p class="lead font-weight-bold"><a href="#">A python project. <span class="text-warning">PYTHON</span> </a> </p>
+              <p class="lead font-weight-bold"><a href="https://github.com/Asfak06/Imaginary-shop">Imaginary shop. <span class="text-warning">PYTHON</span> </a> </p>
             </div>
           </div>
            <div class="d-flex flex-row">
@@ -378,6 +462,7 @@
       </div>
     </div>
   </section>
+
 
   <section id="hom-getstarted" class="text-center text-light">
     <div class="dark-overlayd">
@@ -455,13 +540,26 @@
       </div>
     </div>
   </div>
+  <script src="js/countUp.js"></script>
+  <script src="js/countUp-jquery.js"></script>
   <script src="js/anime.min.js"></script>
   <script src="js/animate.js"></script>
-  <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/navbar-fixed.js"></script>
+
+
 <script>
+  $(window).on("load", function() {
+
+  $(".loader .inner").fadeOut(500, function() {
+    $(".loader").fadeOut(750);
+  });
+
+})
+
+
+
   anime({   
     targets:'#demo-svg path',
     strokeDashoffset: [anime.setDashoffset, 0],
@@ -470,6 +568,28 @@
     direction: 'alternate',
     loop: true
   });
+
+$(document).ready(function() {
+
+   var statsTopOffset = $(".statsSection").offset().top;
+   var countUpFinished = false;
+   $(window).scroll(function() {
+       
+      if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+      $(".counter").each(function() {
+        var element = $(this);
+        var endVal = parseInt(element.text());
+
+        element.countup(endVal);
+      })
+      countUpFinished = true;
+      }
+
+    });
+
+
+});
+
 </script>
   
 </body>
