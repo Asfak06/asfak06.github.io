@@ -13,10 +13,6 @@
   <script src="js/jquery.min.js"></script>
 </head>
 <body>
-   
-  <div class="loader">
-    <div class="inner"></div>
-  </div>
 
   <nav class="navbar navbar-dark navbar-expand-md fixed-top">
     <div class="container">
@@ -550,16 +546,6 @@
 
 
 <script>
-  $(window).on("load", function() {
-
-  $(".loader .inner").fadeOut(500, function() {
-    $(".loader").fadeOut(750);
-  });
-
-})
-
-
-
   anime({   
     targets:'#demo-svg path',
     strokeDashoffset: [anime.setDashoffset, 0],
