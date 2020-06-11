@@ -24,9 +24,9 @@ canvas {
       }
   .box img {
     border: 1px solid #ddd;
-    border-radius: 4px;
     padding: 5px;
     border-radius: 50%;
+    z-index: 12;
   }
   .intro{
   position: absolute;
@@ -34,12 +34,16 @@ canvas {
   left:50%;
   top:50%;
   text-align:center;
-  color:#fafafa;
   z-index: 10;
   width:100%;
   max-width:700px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  
      }
+  @media(max-width:500px){
+    .intro{
+      top:40%;
+    }
+  }
 #explore-head-section{
   margin-top:490px;
 }
