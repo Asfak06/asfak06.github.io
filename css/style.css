@@ -85,6 +85,10 @@ canvas {
     .display-4{
       font-size: 44px;
     }
+    .box img{
+      width: 50% !important;
+      height: 50% !important;
+     }
 
   }
 
