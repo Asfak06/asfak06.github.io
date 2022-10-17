@@ -66,7 +66,7 @@ canvas {
     padding: 5px;
     border-radius: 50%;
   }
-  .intro{
+  /* .intro{
   position: absolute;
   transform:translate(-50%, -50%);
   left:50%;
@@ -76,7 +76,8 @@ canvas {
   width:100%;
   max-width:1000px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  
-  }
+  } */
+
 
   @media(max-width:600px){
     .intro{
@@ -96,9 +97,18 @@ canvas {
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
-#about{
-  margin-top:100vh;
+#top{
+  margin-top:150px;
 }
+#projects{
+  width:63%
+}
+@media(max-width:600px){
+  #projects{
+    width:100%
+  }
+}
+
 .text{
    width:60%;
 }
@@ -107,14 +117,21 @@ canvas {
     width:90%;
   }
 }
+
 .center{
   display: flex;
   flex-direction:column;
   justify-content: center;
   align-items: center;
 }
+.img-center{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
 .sect{
-  min-height: 100vh;
+  min-height: auto;
 }
 
 i{
