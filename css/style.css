@@ -287,7 +287,7 @@ i {
 
 .profile-image {
   border: 2px solid #444;
-  padding: 2px;
+  padding: 0px;
   background-color: #FFFFFF;
   width: 180px;
   height: 180px;
